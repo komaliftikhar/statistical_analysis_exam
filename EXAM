@@ -1,0 +1,15 @@
+# install.packages("vegan")
+library(vegan)
+1.
+# we already have the inputs so we created a subfolder there. 
+#otherwise you can import like this
+dir.create("data")
+dir.create("outputs")
+
+# 2)
+# Importing the data
+BCI <- read.csv("data/BCI.csv")
+BCI
+BCI_env <- read.table("data/BCI_env.txt", sep = " ", header = T)  
+BCI_env
+
